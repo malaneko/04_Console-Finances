@@ -88,25 +88,25 @@ var finances = [
 ];
 
 
+// //console.table(finances);
 
-
-//The total number of months included in the dataset.
-
-
-
+// The total number of months included in the dataset
+// Initialize a variable to hold it. Months amount equals length of value entries.
+totalMonths = finances.length;
 console.log("Total number of months: " + finances.length);
 
-console.table(finances);
+
 
 
 //The net total amount of Profit/Losses over the entire period.
 
-//var total = finances.forEach([1])
+// All Profit/Loses are [1] indices (the 2nd elements) of each nested array
+// console.table(finances);
 
 
-//`Total/(Number of months - 1)
-var change = finances.length - 1;
-console.log(change);
+
+
+
 
 
 //The average of the **changes** in Profit/Losses over the entire period.
@@ -123,3 +123,38 @@ console.log(change);
 
 
 //The greatest decrease in Profit/Losses (date and amount) over the entire period.
+
+
+
+//----------------------------------------------------------------
+
+
+//looping through array - iterate thriugh each nnested array 
+
+//print to screen
+
+// Compute net total by ...
+
+// var total = finances.forEach([1])
+
+
+// `Total/(Number of months - 1)
+// var change = finances.length - 1;
+// console.log(change);
+
+
+
+//The net total amount of Profit/Losses over the entire period.
+
+
+// JS - random numbers generation - randomness
+// Math.floor() -> returns the largest integer less or = to XMLDocument
+
+// Math.random() -> returns pseudo random number between 0 and 1
+
+// var RANDOMLYpickedELEMENT  = arrayNAME[Math.floor(Math.random() * arrayNAME.length)];
+
+
+//-----------------------------------------------------------
+
+//JavaScript Multidimensional Array
