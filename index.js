@@ -103,7 +103,39 @@ console.log("Total number of months: " + finances.length);
 // All Profit/Loses are [1] indices (the 2nd elements) of each nested array
 // console.table(finances);
 
+// How to sum up an array of arrays?
+// To find the sum of elements of an array - create an empty variable -> initialize sum = 0 .
+// Initialize it with 0 in a loop -> run a for loop from i = 0 to i = size - 1 .
+// Traverse through each element (or get each element from the user) add each element to sum.
+// Print sum.
 
+
+var sum = 0;
+var eachDate = eachRecod[0];       
+var eachRecod = finances[i];         
+var eachProfilLosses = eachRecod[1]; 
+   
+  
+for (var i = 0; i < finances.length; i++) {
+  sum += eachProfilLosses
+} 
+
+
+
+
+
+// At every iteration of the for loop, add sum and the current element of the array, i.e., sum = sum + arr[i] .
+// At the end of the for loop, the sum of all the elements will be stored in the sum variable.
+
+
+
+
+
+
+
+
+
+// var netTotal = finances 
 
 
 
@@ -129,7 +161,7 @@ console.log("Total number of months: " + finances.length);
 //----------------------------------------------------------------
 
 
-//looping through array - iterate thriugh each nnested array 
+//looping through aray - iterate thriugh each nnested array 
 
 //print to screen
 
