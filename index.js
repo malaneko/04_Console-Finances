@@ -90,42 +90,65 @@ var finances = [
 
 // //console.table(finances);
 
+
+
 // The total number of months included in the dataset
 // Initialize a variable to hold it. Months amount equals length of value entries.
-totalMonths = finances.length;
-console.log("Total number of months: " + finances.length);
+var totalMonths = finances.length;
+console.log("Total number of months: " + totalMonths);
 
-
-
+//----------------------------------------------------------------
 
 //The net total amount of Profit/Losses over the entire period.
 
 // All Profit/Loses are [1] indices (the 2nd elements) of each nested array
-// console.table(finances);
+
+
+// console.table(finances); // table representation
+
+
+
+
+// for (var i = 0; i < finances.length; i++){    //display all the nested arrays
+//   console.log(finances[i]);
+//   }
+
+// for (var i = 0; i < finances.length; i++){   // access/display 1st money value 
+//   console.log(finances[0][1]);
+//   }
+  
+//   for (var i = 0; i < finances.length; i++){      // access/display all the money values
+//     console.log(finances[i][1]); 
+//     }
+
+
 
 // How to sum up an array of arrays?
 // To find the sum of elements of an array - create an empty variable -> initialize sum = 0 .
-// Initialize it with 0 in a loop -> run a for loop from i = 0 to i = size - 1 .
+
+var sum = 0; // starts from 0 and will store the total sum
+
+
+// create variables to hold array elements
+var eachRecord = finances[i];  //each nested array      
+var eachDate = eachRecord[0];  //stores dates 
+var money = eachRecord[1];     //stores money values
+
+
+
 // Traverse through each element (or get each element from the user) add each element to sum.
-// Print sum.
+// (Initialize it with 0 in a loop -> run a for loop from i = 0)
 
-
-var sum = 0;
-var eachDate = eachRecod[0];       
-var eachRecod = finances[i];         
-var eachProfilLosses = eachRecod[1]; 
-   
-  
-for (var i = 0; i < finances.length; i++) {
-  sum += eachProfilLosses
-} 
-
-
-
-
-
-// At every iteration of the for loop, add sum and the current element of the array, i.e., sum = sum + arr[i] .
-// At the end of the for loop, the sum of all the elements will be stored in the sum variable.
+for (var i = 0; i < finances.length; i++) {          //loops through the whole array
+  for (var j = 0; j < finances[i].length; j++){    //loops through the inner arrays looking for money values
+    if (typeof value === 'number'){             //when number value found
+                                
+  sum += money;             //to sum=0 add money values of each nested array
+                              
+}}
+}
+console.log(sum);                                  // Print sum.
+console.log("Total: " + '$' + sum);
 
 
 
@@ -135,18 +158,22 @@ for (var i = 0; i < finances.length; i++) {
 
 
 
-// var netTotal = finances 
 
 
 
-
-
+//----------------------------------------------------------------
 //The average of the **changes** in Profit/Losses over the entire period.
 //You will need to track what the total change in Profit/Losses are from month to month and then find the average.
 //(`Total/(Number of months - 1)`)
 
+// averageChange = Math.round((? / (finances.length - 1)) * 100) / 100;
+
+// console.log('Average Change:' + averageChange);
 
 
+
+
+//----------------------------------------------------------------
 
 //The greatest increase in Profit/Losses (date and amount) over the entire period.
 
@@ -157,36 +184,6 @@ for (var i = 0; i < finances.length; i++) {
 //The greatest decrease in Profit/Losses (date and amount) over the entire period.
 
 
-
+// console.log('The greatest increase' + );
+// console.log('The greatest decrease' + );
 //----------------------------------------------------------------
-
-
-//looping through aray - iterate thriugh each nnested array 
-
-//print to screen
-
-// Compute net total by ...
-
-// var total = finances.forEach([1])
-
-
-// `Total/(Number of months - 1)
-// var change = finances.length - 1;
-// console.log(change);
-
-
-
-//The net total amount of Profit/Losses over the entire period.
-
-
-// JS - random numbers generation - randomness
-// Math.floor() -> returns the largest integer less or = to XMLDocument
-
-// Math.random() -> returns pseudo random number between 0 and 1
-
-// var RANDOMLYpickedELEMENT  = arrayNAME[Math.floor(Math.random() * arrayNAME.length)];
-
-
-//-----------------------------------------------------------
-
-//JavaScript Multidimensional Array
